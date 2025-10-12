@@ -1,4 +1,4 @@
-from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import LogisticRegression
 from sklearn.datasets import load_iris
 from typing import Tuple
 import pandas as pd
@@ -12,15 +12,15 @@ def load_data() -> Tuple[pd.DataFrame, pd.Series]:
     return df, y
 
 
-def train_model(df: pd.DataFrame, y: pd.Series) -> LinearRegression:
-    model = LinearRegression()
+def train_model(df: pd.DataFrame, y: pd.Series) -> LogisticRegression:
+    model = LogisticRegression(max_iter=100)
     model.fit(df, y)
     return model
 
 
-def save_model(model: LinearRegression) -> None:
+def save_model(model: LogisticRegression) -> None:
     current_dir = Path(__file__).parent.resolve()
-    saving_path = f"{current_dir}/saved_models/linear_model.joblib"
+    saving_path = f"{current_dir}/saved_models/model.joblib"
     joblib.dump(model, saving_path)
 
 

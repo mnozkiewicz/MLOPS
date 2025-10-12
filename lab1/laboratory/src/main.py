@@ -1,6 +1,6 @@
 import argparse
 from dotenv import load_dotenv
-from src.settings import Settings
+from settings import Settings
 import os
 import yaml
 
