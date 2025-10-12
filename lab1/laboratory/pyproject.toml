@@ -8,4 +8,5 @@ dependencies = [
     "pre-commit>=4.3.0",
     "pyaml>=25.7.0",
     "pydantic-settings>=2.11.0",
+    "pytest>=8.4.2",
 ]
