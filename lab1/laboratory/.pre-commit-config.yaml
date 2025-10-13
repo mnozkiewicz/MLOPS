@@ -4,10 +4,13 @@ repos:
      hooks:
         - id: ruff  # Linter
           args: [--fix]  # Ensure fixes are applied
+          files: ^lab1/laboratory/src
         - id: ruff-format  # Formatter
+          files: ^lab1/laboratory/src
 
    - repo: https://github.com/rubik/xenon
      rev: v0.9.0
      hooks:
      - id: xenon
        args: ['--max-absolute=B']
+       files: ^lab1/laboratory/src
