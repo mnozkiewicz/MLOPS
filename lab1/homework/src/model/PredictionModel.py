@@ -42,9 +42,9 @@ class PredictionModel:
         if embedding.ndim == 1:
             embedding = embedding.reshape(1, -1)
 
-        sentiment = self.classifier.predict(embedding)[0]
-        label = map_to_class(sentiment)
+        label = self.classifier.predict(embedding)[0]
+        sentiment = map_to_class(label)
 
-        if not label:
-            raise ValueError(f"Invalid sentiment label: {sentiment}")
-        return label
+        if sentiment is None:
+            raise ValueError(f"Invalid sentiment label: {label}")
+        return sentiment

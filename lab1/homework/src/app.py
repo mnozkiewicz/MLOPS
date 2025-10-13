@@ -8,7 +8,7 @@ model = PredictionModel()
 
 @app.get("/")
 def welcome_root():
-    return {"message": "Welcome to the ML API"}
+    return {"message": "Welcome from sentiment analysis API"}
 
 
 @app.get("/health")

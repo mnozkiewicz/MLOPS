@@ -8,13 +8,13 @@ client = TestClient(app)
 
 
 def test_health_and_root():
-    r_health = client.get("/health")
-    assert r_health.status_code == 200
-    assert r_health.json() == {"status": "ok"}
+    health = client.get("/health")
+    assert health.status_code == 200
+    assert health.json() == {"status": "ok"}
 
-    r_root = client.get("/")
-    assert r_root.status_code == 200
-    assert "message" in r_root.json()
+    root = client.get("/")
+    assert root.status_code == 200
+    assert "message" in root.json()
 
 
 def test_model_loading():
@@ -26,9 +26,9 @@ def test_model_loading():
 @pytest.mark.parametrize(
     "text",
     [
-        "I love MLOps!",
-        "This is terrible...",
-        "It's okay, not great but fine.",
+        "What a beatiful evening",
+        "I feel like jumping out the window",
+        "Not great, not terrible",
     ]
 )
 def test_predict_valid_input(text: str):
@@ -43,6 +43,6 @@ def test_predict_valid_input(text: str):
 
 def test_predict_invalid_input():
     response = client.post("/predict", json={"text": ""})
-    assert response.status_code == 422  # FastAPI validation error
+    assert response.status_code == 422
     data = response.json()
     assert "detail" in data
