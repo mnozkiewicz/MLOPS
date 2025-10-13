@@ -1,7 +1,9 @@
 from fastapi import FastAPI
 from .api.models.request import PredictRequest, PredictResponse
+from .model.PredictionModel import PredictionModel
 
 app = FastAPI(title="Sentiment Inference API")
+model = PredictionModel()
 
 
 @app.get("/")
@@ -14,13 +16,7 @@ def health_check():
     return {"status": "ok"}
 
 
-def dummy_inference(text: str) -> str:
-    if "great" in text.lower():
-        return "positive"
-    return "negative"
-
-
 @app.post("/predict", response_model=PredictResponse)
 def predict_endpoint(request: PredictRequest):
-    prediction = dummy_inference(request.text)
+    prediction = model.predict(request.model_dump()["text"])
     return PredictResponse(prediction=prediction)
