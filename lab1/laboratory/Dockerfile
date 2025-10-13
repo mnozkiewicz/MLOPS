@@ -18,5 +18,8 @@ COPY . .
 # Expose the application port
 EXPOSE 8000
 
-# Run the application with uv
-CMD ["uv", "run", "uvicorn", "src.app:app", "--host", "0.0.0.0", "--port", "8000"]
+# Add python from .venv to path
+ENV PATH="/app/.venv/bin:$PATH"
+
+# Run the application
+CMD ["uvicorn", "src.app:app", "--host", "0.0.0.0", "--port", "8000"]
