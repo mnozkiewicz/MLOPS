@@ -9,9 +9,7 @@ def get_current_dir_path() -> Path:
     return Path(__file__).parent.resolve()
 
 
-def load_sentence_transformer(
-    model_dir: str = "model/sentence_transformer.model",
-) -> SentenceTransformer:
+def load_sentence_transformer() -> SentenceTransformer:
     current_dir = get_current_dir_path()
     path = Path(f"{current_dir}/saved_models/sentence_transformer.model")
 
