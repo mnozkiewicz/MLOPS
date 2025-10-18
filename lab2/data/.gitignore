@@ -1,2 +1,6 @@
-services-2024.csv
-disruptions-2023.csv
+*.csv
+*.tsv
+*.db*
+*.json
+*.jsonl
+*.parquet
