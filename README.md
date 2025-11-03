@@ -10,5 +10,5 @@ All assignments and lab instructions are based on the MLOps course [repository](
 | **Lab 1** | [lab1/laboratory](./lab1/laboratory) | [lab1/homework](./lab1/homework) | Dependency management, FastAPI inference<br> Docker and Docker-Compose basics |
 | **Lab 2** | [lab2](./lab2) | [lab2/homework](./lab2/homework.ipynb) | Databases & file formats - PostgreSQL, DuckDB, Parquet |
 | **Lab 3** | [lab3/polars](./lab3/notebook_polars.ipynb) | [lab3/homework](./lab3/homework.ipynb) | Data processing - Polars|
-| **Lab 3** | [lab4/laboratory](./lab4/laboratory) | [lab4/homework](./lab4/homework) | Vector databases|
+| **Lab 4** | [lab4/laboratory](./lab4/laboratory) | [lab4/homework](./lab4/homework) | Vector databases|
 
