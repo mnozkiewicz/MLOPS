@@ -11,4 +11,5 @@ All assignments and lab instructions are based on the MLOps course [repository](
 | **Lab 2** | [lab2](./lab2) | [lab2/homework](./lab2/homework.ipynb) | Databases & file formats - PostgreSQL, DuckDB, Parquet |
 | **Lab 3** | [lab3/polars](./lab3/notebook_polars.ipynb) | [lab3/homework](./lab3/homework.ipynb) | Data processing - Polars|
 | **Lab 4** | [lab4/laboratory](./lab4/laboratory) | [lab4/homework](./lab4/homework) | Vector databases|
+| **Lab 5** | [lab5](./lab5/) | ... | Versioning - DVC, MLFlow
 
