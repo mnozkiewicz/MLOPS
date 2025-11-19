@@ -1,0 +1,15 @@
+services:
+  onnx_api:
+    build:
+      context: .
+      dockerfile: Dockerfile_onnx
+    container_name: onnx_api
+    ports:
+      - "8000:8000"
+  torch_api:
+    build:
+      context: .
+      dockerfile: Dockerfile_torch
+    container_name: torch_api
+    ports:
+      - "8001:8001"
