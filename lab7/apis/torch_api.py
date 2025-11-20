@@ -30,6 +30,7 @@ tokenizer = AutoTokenizer.from_pretrained("models/tokenizer")
 
 compiled_model = torch.compile(model)
 
+# Run initial inference through the compiled torch model, on the server startup
 run_inference({
     "input_ids": torch.ones(1, 100, dtype=torch.int32), 
     "attention_mask": torch.ones(1, 100, dtype=torch.int32)
