@@ -13,4 +13,5 @@ All assignments and lab instructions are based on the MLOps course [repository](
 | **Lab 4** | [lab4/laboratory](./lab4/laboratory) | [lab4/homework](./lab4/homework) | Vector databases|
 | **Lab 5** | [lab5](./lab5/) | ... | Versioning - DVC, MLFlow
 | **Lab 6** | [lab6/laboratory](./lab6/LAB_INSTRUCTION.ipynb) | [lab6/homework](./lab6/homework.ipynb)  | CleanLab, Giskard, Captum, SHAP
+| **Lab 7** | [lab7/laboratory](./lab7/) | ... | PyTorch optimization, ONNX, ONNX Runtime
 
