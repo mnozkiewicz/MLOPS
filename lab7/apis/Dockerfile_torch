@@ -5,6 +5,9 @@ RUN pip install --no-cache-dir fastapi uvicorn transformers torch
 
 WORKDIR /app
 COPY torch_api.py .
+COPY api ./api
+
 COPY models/mpnet ./models/mpnet
+COPY models/tokenizer ./models/tokenizer
 
 CMD ["uvicorn", "torch_api:app", "--host", "0.0.0.0", "--port", "8001"]

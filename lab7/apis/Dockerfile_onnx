@@ -1,10 +1,13 @@
 FROM python:3.12-slim
 
-RUN pip install --no-cache-dir fastapi uvicorn onnxruntime numpy
+RUN pip install --no-cache-dir fastapi uvicorn onnxruntime numpy transformers
 
 WORKDIR /app
 COPY onnx_api.py .
+COPY api ./api
+
 COPY models/model.onnx ./models/model.onnx
 COPY models/model.onnx.data ./models/model.onnx.data
+COPY models/tokenizer ./models/tokenizer
 
 CMD ["uvicorn", "onnx_api:app", "--host", "0.0.0.0", "--port", "8000"]
