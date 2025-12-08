@@ -5,6 +5,7 @@ description = "Lab1 homework task"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "boto3>=1.42.4",
     "clean-text>=0.6.0",
     "fastapi>=0.119.0",
     "joblib>=1.5.2",
