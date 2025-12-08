@@ -15,4 +15,5 @@ All assignments and lab instructions are based on the MLOps course [repository](
 | **Lab 6** | [lab6/laboratory](./lab6/LAB_INSTRUCTION.ipynb) | [lab6/homework](./lab6/homework.ipynb)  | CleanLab, Giskard, Captum, SHAP
 | **Lab 7** | [lab7/laboratory](./lab7/) | ... | PyTorch optimization, ONNX, ONNX Runtime
 | **Lab 8** | [lab8/laboratory](./lab8/) | ... | Data and Model drift, Evidently, NannyML
+| **Lab 9** | [lab9/laboratory](./lab9/) | ... | AWS basics, VPC, ECR, ECS
 
