@@ -16,4 +16,5 @@ All assignments and lab instructions are based on the MLOps course [repository](
 | **Lab 7** | [lab7/laboratory](./lab7/) | ... | PyTorch optimization, ONNX, ONNX Runtime
 | **Lab 8** | [lab8/laboratory](./lab8/) | ... | Data and Model drift, Evidently, NannyML
 | **Lab 9** | [lab9/laboratory](./lab9/) | ... | AWS basics, VPC, ECR, ECS
+| **Lab 10** | [lab10/laboratory](./lab10/) | ... | Infrastucture as Code, Terraform
 
