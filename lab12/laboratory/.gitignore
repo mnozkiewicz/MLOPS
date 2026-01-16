@@ -1,0 +1,6 @@
+.env
+data
+airflow/**
+logs/**
+.uv_cache/**
+config/**
