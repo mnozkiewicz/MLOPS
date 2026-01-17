@@ -1,0 +1,6 @@
+.env
+logs/**
+plugins/**
+data/**
+config/**
+.uv-cache/**

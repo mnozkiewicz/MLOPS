@@ -1,0 +1,31 @@
+[project]
+name = "MLOps_course_AGH_homework_12"
+version = "1.0.0"
+description = ""
+readme = "README.md"
+
+requires-python = "==3.12.*"
+
+dependencies = [
+    "apache-airflow[celery,pandas,standard,uv,s3fs,postgres]==3.1.5",
+    "cloudpickle",
+    "graphviz>=0.21",
+    "pandas",
+    "pyarrow>=22.0.0",
+    "requests",
+    "apache-airflow-providers-amazon",
+    "polars>=1.37.1",
+    "matplotlib>=3.10.8",
+    "scikit-learn>=1.8.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff",
+    "jupyter"
+]
+airflow_common = [
+    "apache-airflow[celery,postgres,standard,uv,s3fs]==3.1.5",
+    "requests",
+    "apache-airflow-providers-amazon"
+]
