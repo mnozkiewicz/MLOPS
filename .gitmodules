@@ -1,0 +1,3 @@
+[submodule "lab11"]
+	path = lab11
+	url = https://github.com/mnozkiewicz/mlops-lab-11

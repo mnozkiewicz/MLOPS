@@ -178,5 +178,5 @@ services:
 
 volumes:
   postgres-db-volume:
-  uv-cache:
+  .uv-cache:
   localstack_data:

@@ -18,4 +18,5 @@ All assignments and lab instructions are based on the MLOps course [repository](
 | **Lab 9** | [lab9/laboratory](./lab9/) | ... | AWS basics, VPC, ECR, ECS
 | **Lab 10** | [lab10/laboratory](./lab10/) | ... | Infrastucture as Code, Terraform
 | **Lab 11** | [lab11](https://github.com/mnozkiewicz/mlops-lab-11) | ... | Github actions
+| **Lab 12** | [lab12/laboratory](./lab12/laboratory/) | [lab12/homework](./lab12/homework/) | Airflow
 
