@@ -114,21 +114,6 @@ async def make_llm_request(prompt: str) -> str:
 
 
 if __name__ == "__main__":
-    # prompt = "What will be weather in Birmingham in two weeks?"
-    # response = asyncio.run(make_llm_request(prompt))
-    # print("Response:\n", response)
-
-    # print()
-
-    # prompt = "What will be weather in Warsaw the day after tomorrow?"
-    # response = asyncio.run(make_llm_request(prompt))
-    # print("Response:\n", response)
-
-    # print()
-
-    # prompt = "What will be weather in New York in two months?"
-    # response = asyncio.run(make_llm_request(prompt))
-    # print("Response:\n", response)
     prompt = "Can you plot some random data, like [[1, 2, 3], [4, 5, 6]]"
     response = asyncio.run(make_llm_request(prompt))
     print("Response:\n", response)
