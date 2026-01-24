@@ -45,6 +45,3 @@ Include security:
 - select reasonable guardrails
 
 Along code files, include screenshots of conversations with the model.
-
-
-9B87 - QG4F - 3RU7 - F62W - 1PME - TLGX
