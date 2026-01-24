@@ -1,0 +1,8 @@
+
+services:
+  mcp_weather:
+    build: ./mcp_weather
+    container_name: mcp_weather
+    ports:
+      - "8001:8001"
+    restart: unless-stopped
