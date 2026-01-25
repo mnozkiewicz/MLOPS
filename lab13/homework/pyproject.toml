@@ -2,11 +2,9 @@
 name = "MLOps_course_AGH_lab_13_homework"
 version = "1.0.0"
 description = ""
-
 requires-python = "==3.11.*"
 
 dependencies = [
-    "fastmcp>=2.14.3",
     "guardrails-ai>=0.7.2",
     "jupyter>=1.1.1",
     "matplotlib>=3.10.8",
@@ -14,7 +12,6 @@ dependencies = [
     "openai<2", # Guardrails AI limitation
     "python-dotenv>=1.2.1",
     "requests>=2.32.5",
-    "transformers[torch]>=4.51.0",
 ]
 
 [dependency-groups]
@@ -22,7 +19,11 @@ linux = [
     "ruff",
     "vllm>=0.13.0",
     "bitsandbytes>=0.49.1",
+    "transformers[torch]>=4.51.0",
+    "fastmcp>=2.14.3",
 ]
 mac = [
+    "fastmcp>=2.14.3",
+    "transformers[torch]>=4.51.0",
     "ruff"
 ]
