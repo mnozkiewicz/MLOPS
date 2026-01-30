@@ -19,5 +19,5 @@ All assignments and lab instructions are based on the MLOps course [repository](
 | **Lab 10** | [lab10/laboratory](./lab10/) | ... | Infrastucture as Code, Terraform
 | **Lab 11** | [lab11](https://github.com/mnozkiewicz/mlops-lab-11) | ... | Github actions
 | **Lab 12** | [lab12/laboratory](./lab12/laboratory/) | [lab12/homework](./lab12/homework/) | Airflow
-| **Lab 12** | [lab13/laboratory](./lab12/laboratory/) | [lab13/homework](./lab12/homework/) | LLMops, VLLM, Model Context Protocol
+| **Lab 13** | [lab13/laboratory](./lab12/laboratory/) | [lab13/homework](./lab12/homework/) | LLMops, VLLM, Model Context Protocol
 
